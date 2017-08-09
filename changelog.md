@@ -1,5 +1,13 @@
 # apollo-upload-client change log
 
+## 5.1.0
+
+- Updated dependencies.
+- Readme tweaks including a new licence badge.
+- Fixed Rollup build warnings.
+- Fixed an npm v5 warning by using `prepublishOnly` instead of `prepublish`.
+- Refactored network interfaces; moved file extraction logic and `ReactNativeFile` to a seperate [`extract-files`](https://www.npmjs.com/package/extract-files) package.
+
 ## 5.0.0
 
 - Removed `package-lock.json`. Lockfiles are [not recommended](https://github.com/sindresorhus/ama/issues/479#issuecomment-310661514) for packages.

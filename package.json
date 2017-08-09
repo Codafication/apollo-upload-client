@@ -1,6 +1,6 @@
 {
   "name": "apollo-upload-client",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "Enhances Apollo Client for intuitive file uploads via GraphQL mutations.",
   "license": "MIT",
   "author": {
@@ -21,28 +21,29 @@
     "upload"
   ],
   "dependencies": {
-    "apollo-client": "^1.5.0",
-    "babel-runtime": "^6.23.0"
+    "apollo-client": "^1.8.0",
+    "babel-runtime": "^6.23.0",
+    "extract-files": "^1.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.5.2",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^4.1.0",
+    "eslint": "^4.2.0",
     "eslint-plugin-prettier": "^2.1.2",
-    "husky": "^0.14.0",
-    "lint-staged": "^4.0.0",
-    "prettier": "^1.4.4",
-    "rollup": "^0.43.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.1",
+    "prettier": "^1.5.2",
+    "rollup": "^0.45.2",
     "rollup-plugin-babel": "^2.7.1",
-    "rollup-watch": "^4.0.0"
+    "rollup-watch": "^4.3.1"
   },
   "scripts": {
     "lint": "eslint .",
     "prebuild": "npm run lint",
     "build": "rollup --config",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "precommit": "lint-staged"
   },
   "main": "dist/apollo-upload-client.js",
